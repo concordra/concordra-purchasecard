@@ -1,0 +1,1883 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!-- ── Primary SEO ─────────────────────────────────────── -->
+<title>Concordra — Government Purchase Card Compliance Software</title>
+<meta name="description" content="Concordra helps federal, state, and local agencies reduce audit findings, automate P-Card workflows, and enforce policy compliance. Built by practitioners with $50M+ in government P-Card experience." />
+<meta name="keywords" content="government purchase card compliance, P-Card software, federal P-Card management, government procurement compliance, purchase card audit, P-Card program management" />
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="https://www.concordra.com/" />
+
+<!-- ── Open Graph (LinkedIn, Facebook) ────────────────── -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.concordra.com/" />
+<meta property="og:title" content="Concordra — Government Purchase Card Compliance Software" />
+<meta property="og:description" content="Reduce audit findings, automate P-Card workflows, and enforce policy compliance across your government agency. Purpose-built for the public sector." />
+<meta property="og:site_name" content="Concordra" />
+
+<!-- ── Twitter Card ────────────────────────────────────── -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Concordra — Government Purchase Card Compliance Software" />
+<meta name="twitter:description" content="Reduce audit findings, automate P-Card workflows, and enforce policy compliance across your government agency." />
+
+<!-- ── Schema.org Structured Data ─────────────────────── -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Concordra",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Web",
+  "description": "Concordra helps federal, state, and local government agencies reduce audit findings, automate Purchase Card (P-Card) workflows, and enforce policy compliance.",
+  "offers": {
+    "@type": "Offer",
+    "availability": "https://schema.org/InStock"
+  },
+  "provider": {
+    "@type": "Organization",
+    "name": "Concordra",
+    "url": "https://www.concordra.com",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "Dhaval.mehta@concordra.com",
+      "contactType": "Sales"
+    }
+  },
+  "audience": {
+    "@type": "Audience",
+    "audienceType": "Government Agencies"
+  }
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --navy:    #1A2E52;
+    --navy-mid:#243d6e;
+    --navy-lt: #2f5196;
+    --teal:    #2A8C7F;
+    --teal-lt: #34b09f;
+    --gold:    #E8A83E;
+    --white:   #FFFFFF;
+    --off-white:#F4F6FA;
+    --light:   #EAF0F8;
+    --text:    #1A2535;
+    --muted:   #5A6882;
+    --border:  #D6E0F0;
+    --shadow:  0 4px 24px rgba(26,46,82,0.10);
+    --shadow-lg: 0 12px 48px rgba(26,46,82,0.16);
+    --radius:  10px;
+    --radius-lg: 16px;
+    --font-head: 'Playfair Display', Georgia, serif;
+    --font-body: 'Source Sans 3', sans-serif;
+    --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--font-body);
+    color: var(--text);
+    background: var(--white);
+    line-height: 1.6;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ── SCROLL REVEAL ─────────────────────────────────── */
+  .reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.65s ease, transform 0.65s ease;
+  }
+  .reveal.visible { opacity: 1; transform: none; }
+  .reveal-delay-1 { transition-delay: 0.1s; }
+  .reveal-delay-2 { transition-delay: 0.2s; }
+  .reveal-delay-3 { transition-delay: 0.3s; }
+  .reveal-delay-4 { transition-delay: 0.4s; }
+
+  /* ── NAV ───────────────────────────────────────────── */
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--navy);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 6vw;
+    height: 68px;
+    box-shadow: 0 2px 16px rgba(26,46,82,0.25);
+  }
+
+  .nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: var(--white);
+  }
+
+  .nav-logo svg { flex-shrink: 0; }
+
+  .nav-logo-text {
+    font-family: var(--font-head);
+    font-size: 1.45rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    color: var(--white);
+  }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 2.2rem;
+    list-style: none;
+  }
+
+  .nav-links a {
+    color: rgba(255,255,255,0.82);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    transition: color var(--transition);
+  }
+  .nav-links a:hover { color: var(--white); }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 22px;
+    border-radius: var(--radius);
+    font-family: var(--font-body);
+    font-size: 0.92rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    transition: all var(--transition);
+    border: 2px solid transparent;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  .btn-primary {
+    background: var(--teal);
+    color: var(--white);
+    border-color: var(--teal);
+  }
+  .btn-primary:hover {
+    background: var(--teal-lt);
+    border-color: var(--teal-lt);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(42,140,127,0.35);
+  }
+
+  .btn-outline {
+    background: transparent;
+    color: var(--white);
+    border-color: rgba(255,255,255,0.6);
+  }
+  .btn-outline:hover {
+    background: rgba(255,255,255,0.1);
+    border-color: var(--white);
+    transform: translateY(-1px);
+  }
+
+  .btn-outline-dark {
+    background: transparent;
+    color: var(--navy);
+    border-color: var(--navy);
+  }
+  .btn-outline-dark:hover {
+    background: var(--navy);
+    color: var(--white);
+    transform: translateY(-1px);
+  }
+
+  .btn-gold {
+    background: var(--gold);
+    color: var(--navy);
+    border-color: var(--gold);
+    font-weight: 700;
+  }
+  .btn-gold:hover {
+    background: #f0b94e;
+    border-color: #f0b94e;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(232,168,62,0.35);
+  }
+
+  .btn-lg { padding: 14px 30px; font-size: 1rem; }
+
+  /* ── HERO ──────────────────────────────────────────── */
+  .hero {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 60%, #1e4d8c 100%);
+    position: relative;
+    overflow: hidden;
+    padding: 80px 6vw 90px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    min-height: 520px;
+  }
+
+  /* subtle dot-grid overlay */
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(circle, rgba(255,255,255,0.06) 1px, transparent 1px);
+    background-size: 28px 28px;
+    pointer-events: none;
+  }
+
+  /* decorative arc */
+  .hero::after {
+    content: '';
+    position: absolute;
+    right: -80px;
+    bottom: -120px;
+    width: 520px;
+    height: 520px;
+    border-radius: 50%;
+    border: 56px solid rgba(255,255,255,0.04);
+    pointer-events: none;
+  }
+
+  .hero-content { position: relative; z-index: 1; }
+
+  .hero-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.18);
+    color: rgba(255,255,255,0.9);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 5px 14px;
+    border-radius: 40px;
+    margin-bottom: 1.2rem;
+  }
+
+  .hero-title {
+    font-family: var(--font-head);
+    font-size: clamp(2rem, 3.5vw, 2.9rem);
+    font-weight: 900;
+    color: var(--white);
+    line-height: 1.18;
+    margin-bottom: 1.2rem;
+    letter-spacing: -0.01em;
+  }
+
+  .hero-title span { color: var(--gold); }
+
+  .hero-sub {
+    font-size: 1.05rem;
+    color: rgba(255,255,255,0.78);
+    line-height: 1.7;
+    max-width: 500px;
+    margin-bottom: 1.6rem;
+    font-weight: 300;
+  }
+
+  .hero-checks {
+    list-style: none;
+    margin-bottom: 2.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+  }
+
+  .hero-checks li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: rgba(255,255,255,0.88);
+    font-size: 0.97rem;
+    font-weight: 500;
+  }
+
+  .check-icon {
+    width: 20px;
+    height: 20px;
+    background: var(--teal);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .check-icon svg { width: 11px; height: 11px; }
+
+  .hero-ctas { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+  /* Hero illustration */
+  .hero-visual {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .shield-wrap {
+    position: relative;
+    width: 320px;
+    height: 320px;
+  }
+
+  .shield-bg-ring {
+    position: absolute;
+    inset: -30px;
+    border: 2px solid rgba(255,255,255,0.07);
+    border-radius: 50%;
+    animation: rotateSlow 22s linear infinite;
+  }
+  .shield-bg-ring-2 {
+    position: absolute;
+    inset: -60px;
+    border: 1px dashed rgba(255,255,255,0.05);
+    border-radius: 50%;
+    animation: rotateSlow 32s linear infinite reverse;
+  }
+
+  @keyframes rotateSlow { to { transform: rotate(360deg); } }
+
+  .shield-glow {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 50% 50%, rgba(42,140,127,0.18) 0%, transparent 70%);
+    border-radius: 50%;
+  }
+
+  .shield-svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.15;
+    width: 280px;
+    height: 280px;
+  }
+
+  .shield-card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 20px;
+    padding: 28px 36px;
+    text-align: center;
+    color: white;
+    width: 220px;
+  }
+
+  .shield-card-icon { margin-bottom: 10px; }
+
+  .shield-card-val {
+    font-family: var(--font-head);
+    font-size: 2.2rem;
+    font-weight: 900;
+    color: var(--gold);
+    line-height: 1;
+  }
+
+  .shield-card-label {
+    font-size: 0.78rem;
+    color: rgba(255,255,255,0.7);
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-top: 4px;
+  }
+
+  .floating-badge {
+    position: absolute;
+    background: var(--teal);
+    color: white;
+    border-radius: 12px;
+    padding: 8px 14px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    box-shadow: 0 4px 16px rgba(42,140,127,0.4);
+    white-space: nowrap;
+  }
+
+  .badge-1 { top: 18px; right: 0; animation: float 4s ease-in-out infinite; }
+  .badge-2 { bottom: 18px; left: 0; animation: float 4s ease-in-out infinite 2s; }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50%       { transform: translateY(-8px); }
+  }
+
+  /* ── TRUST BAR ─────────────────────────────────────── */
+  .trust-bar {
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+    padding: 22px 6vw;
+    text-align: center;
+  }
+
+  .trust-bar p {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  .trust-bar strong {
+    color: var(--navy);
+    font-weight: 700;
+  }
+
+  /* ── SECTION GENERIC ───────────────────────────────── */
+  section { padding: 84px 6vw; }
+
+  .section-label {
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--teal);
+    margin-bottom: 0.6rem;
+  }
+
+  .section-title {
+    font-family: var(--font-head);
+    font-size: clamp(1.55rem, 2.5vw, 2.1rem);
+    font-weight: 700;
+    color: var(--navy);
+    line-height: 1.25;
+    margin-bottom: 1rem;
+  }
+
+  .section-title em {
+    font-style: normal;
+    color: var(--teal);
+  }
+
+  .section-sub {
+    font-size: 1rem;
+    color: var(--muted);
+    max-width: 580px;
+    line-height: 1.7;
+    font-weight: 300;
+  }
+
+  /* centered variants */
+  .center { text-align: center; }
+  .center .section-sub { margin: 0 auto; }
+
+  /* ── PROBLEM SECTION ───────────────────────────────── */
+  .problem-section { background: var(--off-white); }
+
+  .problem-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+    margin-top: 3rem;
+  }
+
+  .problem-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .problem-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 1rem;
+    color: var(--text);
+    font-weight: 500;
+    padding: 14px 18px;
+    background: var(--white);
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+    transition: box-shadow var(--transition), transform var(--transition);
+  }
+  .problem-list li:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateX(4px);
+  }
+
+  .problem-icon {
+    width: 32px;
+    height: 32px;
+    background: #FFF0E8;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .problem-visual {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow-lg);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 320px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .problem-visual::before {
+    content: '';
+    position: absolute;
+    top: -30px; right: -30px;
+    width: 120px; height: 120px;
+    background: radial-gradient(circle, rgba(232,168,62,0.12), transparent 70%);
+    border-radius: 50%;
+  }
+
+  .stat-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    width: 100%;
+  }
+
+  .stat-card {
+    background: var(--off-white);
+    border-radius: var(--radius);
+    padding: 20px;
+    text-align: center;
+    border: 1px solid var(--border);
+  }
+
+  .stat-card .val {
+    font-family: var(--font-head);
+    font-size: 1.9rem;
+    font-weight: 900;
+    color: var(--navy);
+    line-height: 1;
+  }
+
+  .stat-card .val.danger { color: #c0392b; }
+  .stat-card .lbl {
+    font-size: 0.78rem;
+    color: var(--muted);
+    font-weight: 500;
+    margin-top: 4px;
+    line-height: 1.4;
+  }
+
+  /* ── FEATURES SECTION ──────────────────────────────── */
+  .features-section { background: var(--white); }
+
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin-top: 3rem;
+  }
+
+  .feature-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 32px 24px;
+    text-align: center;
+    transition: all var(--transition);
+    cursor: default;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .feature-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-lt) 100%);
+    opacity: 0;
+    transition: opacity var(--transition);
+    border-radius: var(--radius-lg);
+  }
+
+  .feature-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); }
+  .feature-card:hover::before { opacity: 1; }
+  .feature-card:hover .feature-icon-wrap { background: rgba(255,255,255,0.12); }
+  .feature-card:hover .feature-title { color: var(--white); }
+  .feature-card:hover .feature-desc { color: rgba(255,255,255,0.75); }
+
+  .feature-card > * { position: relative; z-index: 1; }
+
+  .feature-icon-wrap {
+    width: 64px;
+    height: 64px;
+    background: var(--light);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    transition: background var(--transition);
+  }
+
+  .feature-title {
+    font-family: var(--font-head);
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 10px;
+    line-height: 1.3;
+    transition: color var(--transition);
+  }
+
+  .feature-desc {
+    font-size: 0.88rem;
+    color: var(--muted);
+    line-height: 1.6;
+    transition: color var(--transition);
+  }
+
+  /* ── OUTCOMES SECTION ──────────────────────────────── */
+  .outcomes-section { background: var(--navy); position: relative; overflow: hidden; }
+
+  .outcomes-section::before {
+    content: '';
+    position: absolute;
+    right: -100px; top: -100px;
+    width: 400px; height: 400px;
+    border-radius: 50%;
+    border: 60px solid rgba(255,255,255,0.04);
+  }
+
+  .outcomes-section .section-title { color: var(--white); }
+  .outcomes-section .section-label { color: var(--gold); }
+  .outcomes-section .section-sub { color: rgba(255,255,255,0.65); max-width: 500px; }
+
+  .outcomes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 3rem;
+  }
+
+  .outcome-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: var(--radius);
+    padding: 18px 20px;
+    transition: background var(--transition), transform var(--transition);
+  }
+  .outcome-item:hover {
+    background: rgba(255,255,255,0.1);
+    transform: translateY(-2px);
+  }
+
+  .outcome-check {
+    width: 28px;
+    height: 28px;
+    background: var(--teal);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .outcome-text {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: rgba(255,255,255,0.9);
+  }
+
+  .outcome-desc {
+    font-size: 0.82rem;
+    color: rgba(255,255,255,0.58);
+    margin-top: 4px;
+    line-height: 1.5;
+    font-weight: 400;
+  }
+
+  /* ── HOW IT WORKS ──────────────────────────────────── */
+  .how-section { background: var(--off-white); }
+
+  .steps-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+    position: relative;
+  }
+
+  .steps-row::before {
+    content: '';
+    position: absolute;
+    top: 34px;
+    left: calc(16.67% + 34px);
+    right: calc(16.67% + 34px);
+    height: 2px;
+    background: linear-gradient(90deg, var(--teal), var(--navy-lt));
+    z-index: 0;
+  }
+
+  .step-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 36px 28px 28px;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    box-shadow: var(--shadow);
+    transition: box-shadow var(--transition), transform var(--transition);
+  }
+  .step-card:hover { box-shadow: var(--shadow-lg); transform: translateY(-4px); }
+
+  .step-number {
+    width: 56px;
+    height: 56px;
+    background: var(--navy);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-family: var(--font-head);
+    font-size: 1.3rem;
+    font-weight: 900;
+    color: var(--white);
+    border: 4px solid var(--white);
+    box-shadow: 0 0 0 2px var(--border);
+  }
+
+  .step-card:nth-child(2) .step-number { background: var(--teal); }
+  .step-card:nth-child(3) .step-number { background: var(--navy-lt); }
+
+  .step-title {
+    font-family: var(--font-head);
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 8px;
+  }
+
+  .step-desc {
+    font-size: 0.9rem;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+
+  /* ── ABOUT SECTION ─────────────────────────────────── */
+  .about-section { background: var(--white); }
+
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: start;
+    margin-top: 3rem;
+  }
+
+  .about-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--light);
+    border: 1px solid var(--border);
+    border-radius: 40px;
+    padding: 6px 16px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--navy);
+    letter-spacing: 0.04em;
+    margin-bottom: 1rem;
+  }
+
+  .about-text p {
+    font-size: 1.05rem;
+    color: var(--muted);
+    line-height: 1.8;
+    font-weight: 300;
+    margin-bottom: 1rem;
+  }
+
+  .about-contact {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 1.6rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--navy);
+  }
+
+  /* Trust pillars panel */
+  .trust-pillars {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .trust-pillar {
+    background: var(--off-white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 24px 22px;
+    transition: box-shadow var(--transition), transform var(--transition);
+  }
+
+  .trust-pillar:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-3px);
+  }
+
+  .trust-pillar-icon {
+    width: 48px;
+    height: 48px;
+    background: var(--navy);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 14px;
+  }
+
+  .trust-pillar-title {
+    font-family: var(--font-head);
+    font-size: 0.98rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 6px;
+    line-height: 1.3;
+  }
+
+  .trust-pillar-desc {
+    font-size: 0.83rem;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+
+  /* ── CONTACT FORM SECTION ──────────────────────────── */
+  .contact-section {
+    background: linear-gradient(135deg, var(--navy) 0%, #1e4d8c 100%);
+    padding: 90px 6vw;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .contact-section::before {
+    content: '';
+    position: absolute;
+    right: -120px; bottom: -120px;
+    width: 500px; height: 500px;
+    border-radius: 50%;
+    border: 60px solid rgba(255,255,255,0.04);
+    pointer-events: none;
+  }
+
+  .contact-section::after {
+    content: '';
+    position: absolute;
+    left: -80px; top: -80px;
+    width: 300px; height: 300px;
+    border-radius: 50%;
+    border: 1px dashed rgba(255,255,255,0.06);
+    pointer-events: none;
+  }
+
+  .contact-inner {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 5rem;
+    align-items: start;
+    position: relative;
+    z-index: 1;
+  }
+
+  .contact-left .section-title { color: var(--white); margin-bottom: 1rem; }
+  .contact-left .section-label { color: var(--gold); }
+  .contact-left .section-sub { color: rgba(255,255,255,0.65); }
+
+  .contact-trust {
+    margin-top: 2.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .contact-trust-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 0.92rem;
+    color: rgba(255,255,255,0.75);
+    font-weight: 500;
+  }
+
+  .contact-trust-item .check-icon { flex-shrink: 0; }
+
+  /* The form card */
+  .contact-form-card {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    padding: 44px 40px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+  }
+
+  .form-title {
+    font-family: var(--font-head);
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 6px;
+  }
+
+  .form-subtitle {
+    font-size: 0.88rem;
+    color: var(--muted);
+    margin-bottom: 1.8rem;
+    line-height: 1.5;
+  }
+
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 1rem;
+  }
+
+  .form-group label {
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--navy);
+    letter-spacing: 0.03em;
+  }
+
+  .form-group label .req { color: var(--teal); margin-left: 2px; }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    font-family: var(--font-body);
+    font-size: 0.93rem;
+    color: var(--text);
+    background: var(--off-white);
+    border: 1.5px solid var(--border);
+    border-radius: var(--radius);
+    padding: 11px 14px;
+    transition: border-color var(--transition), box-shadow var(--transition), background var(--transition);
+    outline: none;
+    width: 100%;
+    appearance: none;
+    -webkit-appearance: none;
+  }
+
+  .form-group select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%235A6882' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    padding-right: 36px;
+    cursor: pointer;
+  }
+
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus {
+    border-color: var(--teal);
+    background: var(--white);
+    box-shadow: 0 0 0 3px rgba(42,140,127,0.12);
+  }
+
+  .form-group input::placeholder,
+  .form-group textarea::placeholder { color: #A0B0C8; }
+
+  .form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+    line-height: 1.5;
+  }
+
+  .form-submit {
+    width: 100%;
+    padding: 14px;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 0.4rem;
+    cursor: pointer;
+    border: none;
+    justify-content: center;
+    letter-spacing: 0.04em;
+  }
+
+  .form-submit:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+    transform: none !important;
+    box-shadow: none !important;
+  }
+
+  .form-success {
+    display: none;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .form-success-icon {
+    width: 64px;
+    height: 64px;
+    background: #E8F8F5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px;
+  }
+
+  .form-success h3 {
+    font-family: var(--font-head);
+    font-size: 1.3rem;
+    color: var(--navy);
+    margin-bottom: 8px;
+  }
+
+  .form-success p {
+    font-size: 0.92rem;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+
+  .form-error-msg {
+    display: none;
+    background: #FEF2F2;
+    border: 1px solid #FECACA;
+    border-radius: var(--radius);
+    padding: 12px 16px;
+    font-size: 0.88rem;
+    color: #B91C1C;
+    margin-bottom: 1rem;
+  }
+
+  /* ── FOOTER ────────────────────────────────────────── */
+  footer {
+    background: #111b2e;
+    padding: 28px 6vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    border-top: 1px solid rgba(255,255,255,0.06);
+  }
+
+  .footer-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .footer-copy {
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.45);
+  }
+
+  .footer-link {
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.45);
+    text-decoration: none;
+    transition: color var(--transition);
+  }
+  .footer-link:hover { color: rgba(255,255,255,0.8); }
+
+  .footer-email {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.5);
+    text-decoration: none;
+    transition: color var(--transition);
+  }
+  .footer-email:hover { color: var(--teal-lt); }
+
+  /* ── MOBILE MENU ───────────────────────────────────── */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 4px;
+    border-radius: 6px;
+    transition: background var(--transition);
+  }
+  .hamburger:hover { background: rgba(255,255,255,0.1); }
+  .hamburger span {
+    display: block;
+    height: 2px;
+    background: white;
+    border-radius: 2px;
+    transition: transform 0.3s ease, opacity 0.3s ease, width 0.3s ease;
+    transform-origin: center;
+  }
+  .hamburger span:nth-child(2) { width: 70%; }
+  .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .hamburger.open span:nth-child(2) { opacity: 0; width: 100%; }
+  .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+  .mobile-menu {
+    display: none;
+    position: fixed;
+    top: 68px;
+    left: 0;
+    right: 0;
+    background: var(--navy);
+    border-top: 1px solid rgba(255,255,255,0.08);
+    z-index: 99;
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s cubic-bezier(0.4,0,0.2,1), padding 0.3s ease;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+  }
+  .mobile-menu.open {
+    max-height: 320px;
+    padding: 12px 0 20px;
+  }
+  .mobile-menu a {
+    display: block;
+    padding: 14px 6vw;
+    color: rgba(255,255,255,0.85);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    transition: background var(--transition), color var(--transition);
+  }
+  .mobile-menu a:hover { background: rgba(255,255,255,0.06); color: white; }
+  .mobile-menu a:last-child { border-bottom: none; }
+  .mobile-menu .mobile-cta {
+    margin: 12px 6vw 0;
+    display: block;
+    text-align: center;
+    background: var(--teal);
+    color: white !important;
+    border-radius: var(--radius);
+    font-weight: 600;
+    padding: 13px 6vw !important;
+    border-bottom: none !important;
+  }
+  .mobile-menu .mobile-cta:hover { background: var(--teal-lt) !important; }
+
+  /* ── RESPONSIVE ────────────────────────────────────── */
+  @media (max-width: 900px) {
+    .hero { grid-template-columns: 1fr; gap: 2rem; text-align: center; }
+    .hero-checks li { justify-content: center; }
+    .hero-ctas { justify-content: center; }
+    .hero-visual { display: none; }
+    .problem-grid, .about-grid, .contact-inner { grid-template-columns: 1fr; gap: 2rem; }
+    .features-grid { grid-template-columns: 1fr 1fr; }
+    .outcomes-grid { grid-template-columns: 1fr 1fr; }
+    .steps-row { grid-template-columns: 1fr; }
+    .steps-row::before { display: none; }
+    .trust-pillars { grid-template-columns: 1fr 1fr; }
+  }
+
+  @media (max-width: 580px) {
+    .nav-links { display: none; }
+    .nav-right-btn { display: none; }
+    .hamburger { display: flex; }
+    .mobile-menu { display: block; }
+    .features-grid { grid-template-columns: 1fr; }
+    .outcomes-grid { grid-template-columns: 1fr; }
+    .trust-pillars { grid-template-columns: 1fr; }
+    .contact-form-card { padding: 28px 20px; }
+    .form-row { grid-template-columns: 1fr; }
+    footer { flex-direction: column; text-align: center; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">
+    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M16 2L4 7V17C4 23.6 9.3 29.7 16 31C22.7 29.7 28 23.6 28 17V7L16 2Z" fill="#2A8C7F" opacity="0.9"/>
+      <path d="M16 2L4 7V17C4 23.6 9.3 29.7 16 31C22.7 29.7 28 23.6 28 17V7L16 2Z" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+      <path d="M10.5 16L14.5 20L22 12" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span class="nav-logo-text">Concordra</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#">Home</a></li>
+    <li><a href="#features">Features</a></li>
+    <li><a href="#about">About</a></li>
+  </ul>
+  <a href="#contact" class="btn btn-primary nav-right-btn">Request Demo</a>
+  <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+  <a href="#" onclick="closeMenu()">Home</a>
+  <a href="#features" onclick="closeMenu()">Features</a>
+  <a href="#about" onclick="closeMenu()">About</a>
+  <a href="#contact" class="mobile-cta" onclick="closeMenu()">Request Demo</a>
+
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-eyebrow reveal">
+      <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><circle cx="5" cy="5" r="5" fill="#E8A83E"/></svg>
+      Government P-Card Compliance Platform
+    
+</div>
+    <h1 class="hero-title reveal reveal-delay-1">
+      Modernize Government<br/><span>Purchase Card</span><br/>Compliance
+    </h1>
+    <p class="hero-sub reveal reveal-delay-2">
+      Concordra helps federal, state, and local agencies reduce audit findings, automate P-Card workflows, and enforce policy compliance—without adding administrative burden.
+    </p>
+    <ul class="hero-checks reveal reveal-delay-2">
+      <li>
+        <span class="check-icon"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        Automate purchase approvals and policy checks
+      </li>
+      <li>
+        <span class="check-icon"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        Simplify reconciliation and documentation
+      </li>
+      <li>
+        <span class="check-icon"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        Gain real-time visibility into P-Card activity
+      </li>
+    </ul>
+    <div class="hero-ctas reveal reveal-delay-3">
+      <a href="#contact" class="btn btn-outline btn-lg">Request Early Access</a>
+      <a href="#contact" class="btn btn-gold btn-lg">Schedule a Demo</a>
+    
+</div>
+  
+</div>
+
+  <div class="hero-visual reveal reveal-delay-2">
+    <div class="shield-wrap">
+      <div class="shield-bg-ring">
+</div>
+      <div class="shield-bg-ring-2">
+</div>
+      <div class="shield-glow">
+</div>
+      <!-- Large background shield -->
+      <svg class="shield-svg" viewBox="0 0 200 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M100 10L20 45V110C20 158 56 200 100 215C144 200 180 158 180 110V45L100 10Z" fill="white"/>
+        <path d="M65 110L88 133L136 85" stroke="#1A2E52" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <!-- Center card -->
+      <div class="shield-card">
+        <div class="shield-card-icon">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+            <path d="M18 4L6 9v10c0 8 5.5 14.5 12 16.5C24.5 33.5 30 27 30 19V9L18 4z" stroke="#2A8C7F" stroke-width="1.8" fill="none"/>
+            <path d="M12 18l4 4 8-8" stroke="#E8A83E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        
+</div>
+        <div class="shield-card-val">$50M+
+</div>
+        <div class="shield-card-label">In Annual Transactions Managed by Our Team Across Government Programs
+</div>
+      
+</div>
+      <!-- Floating badges -->
+      <div class="floating-badge badge-1">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><circle cx="6" cy="6" r="6" fill="rgba(255,255,255,0.3)"/><path d="M3 6l2 2 4-4" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Audit Ready
+      
+</div>
+      <div class="floating-badge badge-2">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M6 1v5l3 2" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg>
+        Real-Time Tracking
+      
+</div>
+    
+</div>
+  
+</div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar reveal">
+  <p>Built for <strong>Every Agency Running a Purchase Card Program</strong></p>
+
+</div>
+
+<!-- PROBLEM SECTION -->
+<section class="problem-section">
+  <div class="problem-grid">
+    <div>
+      <p class="section-label reveal">The Challenge</p>
+      <h2 class="section-title reveal reveal-delay-1">Managing P-Card Programs<br/>Shouldn't Be This Hard</h2>
+      <p class="section-sub reveal reveal-delay-1">Most agencies still rely on manual processes that leave them exposed to audit findings, policy violations, and reporting blind spots.</p>
+      <ul class="problem-list">
+        <li class="reveal reveal-delay-1">
+          <span class="problem-icon">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="2" y="4" width="12" height="9" rx="1.5" stroke="#E07B3A" stroke-width="1.5"/><path d="M5 4V3a3 3 0 016 0v1" stroke="#E07B3A" stroke-width="1.5"/></svg>
+          </span>
+          Manual approval processes prone to error
+        </li>
+        <li class="reveal reveal-delay-2">
+          <span class="problem-icon">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6" stroke="#E07B3A" stroke-width="1.5"/><path d="M8 5v3.5l2 1.5" stroke="#E07B3A" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </span>
+          Time-consuming reconciliations each cycle
+        </li>
+        <li class="reveal reveal-delay-2">
+          <span class="problem-icon">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M3 5h7M3 11h5" stroke="#E07B3A" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </span>
+          Limited spending visibility across cardholders
+        </li>
+        <li class="reveal reveal-delay-3">
+          <span class="problem-icon">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 3v5l3 2" stroke="#E07B3A" stroke-width="1.5" stroke-linecap="round"/><circle cx="8" cy="8" r="6" stroke="#E07B3A" stroke-width="1.5"/></svg>
+          </span>
+          Increased audit risk and compliance exposure
+        </li>
+      </ul>
+    
+</div>
+    <div class="problem-visual reveal reveal-delay-2">
+      <p class="section-label" style="margin-bottom:1.4rem;">Common P-Card Program Pain Points</p>
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="val danger">63%
+</div>
+          <div class="lbl">of agencies cite manual processes as their top compliance risk
+</div>
+        
+</div>
+        <div class="stat-card">
+          <div class="val danger">40+
+</div>
+          <div class="lbl">hours per month lost to reconciliation and documentation
+</div>
+        
+</div>
+        <div class="stat-card">
+          <div class="val danger">1 in 4
+</div>
+          <div class="lbl">P-Card transactions flagged in audits due to missing documentation
+</div>
+        
+</div>
+        <div class="stat-card">
+          <div class="val danger">72%
+</div>
+          <div class="lbl">of program managers lack real-time cardholder spend visibility
+</div>
+        
+</div>
+      
+</div>
+    
+</div>
+  
+</div>
+</section>
+
+<!-- FEATURES SECTION -->
+<section class="features-section" id="features">
+  <div class="center">
+    <p class="section-label reveal">The Solution</p>
+    <h2 class="section-title reveal reveal-delay-1">A Smarter Approach to<br/><em>P-Card Compliance</em></h2>
+    <p class="section-sub reveal reveal-delay-1">Four integrated capabilities that work together to protect your agency from audit exposure.</p>
+  
+</div>
+  <div class="features-grid">
+    <div class="feature-card reveal reveal-delay-1">
+      <div class="feature-icon-wrap">
+        <svg width="30" height="30" viewBox="0 0 30 30" fill="none">
+          <rect x="5" y="3" width="20" height="24" rx="3" stroke="#1A2E52" stroke-width="1.8"/>
+          <path d="M10 10h10M10 14h10M10 18h6" stroke="#2A8C7F" stroke-width="1.8" stroke-linecap="round"/>
+          <circle cx="21" cy="21" r="5" fill="#2A8C7F"/>
+          <path d="M18.5 21l2 2 3-3" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      
+</div>
+      <h3 class="feature-title">Pre-Approval Workflows</h3>
+      <div class="feature-desc">Route purchase requests through configurable approval chains before any card spend occurs—eliminating unauthorized purchases at the source.
+</div>
+    
+</div>
+    <div class="feature-card reveal reveal-delay-2">
+      <div class="feature-icon-wrap">
+        <svg width="30" height="30" viewBox="0 0 30 30" fill="none">
+          <path d="M15 3L5 8v9c0 7 4.5 11.5 10 13 5.5-1.5 10-6 10-13V8L15 3z" stroke="#1A2E52" stroke-width="1.8" fill="none"/>
+          <circle cx="21" cy="21" r="5" fill="#2A8C7F"/>
+          <path d="M18.5 21l2 2 3-3" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      
+</div>
+      <h3 class="feature-title">Automated Policy Enforcement</h3>
+      <div class="feature-desc">Define spending limits, merchant category restrictions, and documentation requirements that automatically flag or block non-compliant transactions.
+</div>
+    
+</div>
+    <div class="feature-card reveal reveal-delay-3">
+      <div class="feature-icon-wrap">
+        <svg width="30" height="30" viewBox="0 0 30 30" fill="none">
+          <rect x="4" y="4" width="22" height="22" rx="3" stroke="#1A2E52" stroke-width="1.8"/>
+          <path d="M4 10h22" stroke="#1A2E52" stroke-width="1.8"/>
+          <path d="M10 4v6M20 4v6" stroke="#1A2E52" stroke-width="1.8" stroke-linecap="round"/>
+          <path d="M9 17h5M9 21h3M17 17h4" stroke="#2A8C7F" stroke-width="1.5" stroke-linecap="round"/>
+          <circle cx="21" cy="21" r="5" fill="#2A8C7F"/>
+          <path d="M18.5 21l2 2 3-3" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      
+</div>
+      <h3 class="feature-title">Transaction Reconciliation</h3>
+      <div class="feature-desc">Match every bank statement transaction to its originating purchase request, while handling splits, credits, and dispute flags—giving full traceability across each statement cycle.
+</div>
+    
+</div>
+    <div class="feature-card reveal reveal-delay-4">
+      <div class="feature-icon-wrap">
+        <svg width="30" height="30" viewBox="0 0 30 30" fill="none">
+          <path d="M5 25V10l7-6 7 6v15H5z" stroke="#1A2E52" stroke-width="1.8" fill="none" stroke-linejoin="round"/>
+          <rect x="11" y="18" width="6" height="7" stroke="#1A2E52" stroke-width="1.5"/>
+          <path d="M19 25V14l6-5v16H19" stroke="#1A2E52" stroke-width="1.8" fill="none"/>
+          <circle cx="21" cy="21" r="5" fill="#2A8C7F"/>
+          <path d="M18.5 21l2 2 3-3" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      
+</div>
+      <h3 class="feature-title">Audit-Ready Reporting</h3>
+      <div class="feature-desc">Generate comprehensive audit packages with full transaction trails, approval histories, and exception logs—ready for inspector general review.
+</div>
+    
+</div>
+  
+</div>
+</section>
+
+<!-- OUTCOMES SECTION -->
+<section class="outcomes-section">
+  <div class="center">
+    <p class="section-label reveal">Why Concordra</p>
+    <h2 class="section-title reveal reveal-delay-1">Deliver Measurable Outcomes<br/>for <em style="color:var(--gold)">Your Agency</em></h2>
+    <p class="section-sub reveal reveal-delay-1">Purpose-built for public sector finance teams who need results, not complexity.</p>
+  
+</div>
+  <div class="outcomes-grid">
+    <div class="outcome-item reveal reveal-delay-1">
+      <span class="outcome-check"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7l3 3 6-6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      <div><div class="outcome-text">Stronger Policy Enforcement
+</div><div class="outcome-desc">Prevent non-compliant purchases upfront with automated controls that measurably reduce policy violations.</div></div>
+    
+</div>
+    <div class="outcome-item reveal reveal-delay-1">
+      <span class="outcome-check"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7l3 3 6-6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      <div><div class="outcome-text">Full Spending Transparency
+</div><div class="outcome-desc">Deliver real-time visibility into purchase activity, enabling agencies to track and justify 100% of spend.</div></div>
+    
+</div>
+    <div class="outcome-item reveal reveal-delay-2">
+      <span class="outcome-check"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7l3 3 6-6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      <div><div class="outcome-text">Reduced Compliance Risk
+</div><div class="outcome-desc">Lower audit findings and unauthorized transactions through proactive validation and continuous monitoring.</div></div>
+    
+</div>
+    <div class="outcome-item reveal reveal-delay-2">
+      <span class="outcome-check"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7l3 3 6-6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      <div><div class="outcome-text">Audit-Ready at All Times
+</div><div class="outcome-desc">Maintain a complete, defensible audit trail that cuts audit prep time and improves audit outcomes.</div></div>
+    
+</div>
+    <div class="outcome-item reveal reveal-delay-3">
+      <span class="outcome-check"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7l3 3 6-6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      <div><div class="outcome-text">Greater Accountability Across Stakeholders
+</div><div class="outcome-desc">Link every transaction to a request and approver, driving measurable improvements in oversight and responsibility.</div></div>
+    
+</div>
+    <div class="outcome-item reveal reveal-delay-3">
+      <span class="outcome-check"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7l3 3 6-6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      <div><div class="outcome-text">Actionable Financial Intelligence
+</div><div class="outcome-desc">Transform transaction data into insights that improve budgeting accuracy, policy effectiveness, and spend optimization.</div></div>
+    
+</div>
+  
+</div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how-section">
+  <div class="center">
+    <p class="section-label reveal">Getting Started</p>
+    <h2 class="section-title reveal reveal-delay-1">Purpose-Built for<br/><em>Government Agencies</em></h2>
+    <p class="section-sub reveal reveal-delay-1">Three simple phases to transform your P-Card program.</p>
+  </div>
+  <div class="steps-row">
+    <div class="step-card reveal reveal-delay-1">
+      <div class="step-number">1</div>
+      <h3 class="step-title">Configure</h3>
+      <div class="step-desc">Set up your agency's spending policies, approval hierarchies, merchant restrictions, and documentation requirements—all through a guided setup wizard.</div>
+    </div>
+    <div class="step-card reveal reveal-delay-2">
+      <div class="step-number">2</div>
+      <h3 class="step-title">Manage</h3>
+      <div class="step-desc">Automate and track every P-Card transaction in real time. Cardholders, approvers, and program managers all work from a single, unified platform.</div>
+    </div>
+    <div class="step-card reveal reveal-delay-3">
+      <div class="step-number">3</div>
+      <h3 class="step-title">Monitor</h3>
+      <div class="step-desc">Access live dashboards and on-demand audit reports that give leadership and auditors complete visibility into your program's health and compliance posture.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about-section" id="about">
+  <div class="about-grid">
+    <div class="about-text">
+      <span class="about-badge reveal">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 1.5L2 4v5c0 3 2.2 5.5 5 6.3C9.8 14.5 12 12 12 9V4L7 1.5z" fill="#2A8C7F"/></svg>
+        About Concordra
+      </span>
+      <h2 class="section-title reveal reveal-delay-1">How Concordra Works</h2>
+      <div class="reveal reveal-delay-2">
+        <p>Concordra was built by a team of industry experts with deep, hands-on experience implementing purchase card solutions for large government agencies—programs that process over $50M in transactions annually across thousands of purchase requests.</p>
+        <p>We understand the unique pressures facing P-Card program managers: tightening audit scrutiny, lean staffing, and the constant challenge of maintaining compliance while keeping cardholders productive.</p>
+        <p>Our platform was designed from the ground up for the public sector—not adapted from commercial solutions that don't account for federal and state regulatory requirements.</p>
+      </div>
+      <div class="about-contact reveal reveal-delay-3">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="2" y="4" width="14" height="10" rx="2" stroke="#1A2E52" stroke-width="1.5"/><path d="M2 6l7 5 7-5" stroke="#2A8C7F" stroke-width="1.5"/></svg>
+        <a href="#contact" style="color:var(--navy);text-decoration:none;font-weight:600;">Get in touch via our contact form &#8595;</a>
+      </div>
+    </div>
+
+    <div class="trust-pillars reveal reveal-delay-2">
+
+      <div class="trust-pillar">
+        <div class="trust-pillar-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="8" r="4" stroke="white" stroke-width="1.8"/>
+            <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" stroke="white" stroke-width="1.8" stroke-linecap="round"/>
+            <path d="M17 3l1.5 1.5L21 2" stroke="#2A8C7F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3 class="trust-pillar-title">Deep Domain Experience</h3>
+        <div class="trust-pillar-desc">Our team brings expertise across P-Card policy design, audit, and cardholder operations—covering every role that touches your program.</div>
+      </div>
+
+      <div class="trust-pillar">
+        <div class="trust-pillar-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M12 3L4 7v6c0 5 3.5 9.3 8 10.7C16.5 22.3 20 18 20 13V7L12 3z" stroke="white" stroke-width="1.8" fill="none"/>
+            <path d="M8.5 12l2.5 2.5 4.5-4.5" stroke="#2A8C7F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3 class="trust-pillar-title">Purpose-Built for the Public Sector</h3>
+        <div class="trust-pillar-desc">Concordra natively supports federal acquisition regulations and agency-specific P-Card policy requirements—no workarounds needed.</div>
+      </div>
+
+      <div class="trust-pillar">
+        <div class="trust-pillar-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M17 8C17 5.2 14.8 3 12 3S7 5.2 7 8c0 4 5 9 5 9s5-5 5-9z" stroke="white" stroke-width="1.8" fill="none"/>
+            <circle cx="12" cy="8" r="2" stroke="#2A8C7F" stroke-width="1.8"/>
+            <path d="M5 20h14" stroke="white" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3 class="trust-pillar-title">Agency-First Collaboration</h3>
+        <div class="trust-pillar-desc">We configure around your policies and workflows—working alongside your team to fit your agency's structure, not the other way around.</div>
+      </div>
+
+      <div class="trust-pillar">
+        <div class="trust-pillar-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <rect x="3" y="11" width="18" height="11" rx="2" stroke="white" stroke-width="1.8"/>
+            <path d="M7 11V7a5 5 0 0110 0v4" stroke="white" stroke-width="1.8" stroke-linecap="round"/>
+            <circle cx="12" cy="16" r="1.5" fill="#2A8C7F"/>
+          </svg>
+        </div>
+        <h3 class="trust-pillar-title">Security &amp; Compliance by Design</h3>
+        <div class="trust-pillar-desc">Built with federal data handling standards in mind, ensuring your agency's information stays protected at every step.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT FORM -->
+<section class="contact-section" id="contact">
+  <div class="contact-inner">
+
+    <!-- Left: copy -->
+    <div class="contact-left">
+      <p class="section-label reveal">Get In Touch</p>
+      <h2 class="section-title reveal reveal-delay-1">Ready to Modernize Your<br/>P-Card Program?</h2>
+      <p class="section-sub reveal reveal-delay-1">Tell us about your agency and what you're looking to solve. We'll be in touch within one business day.</p>
+      <div class="contact-trust reveal reveal-delay-2">
+        <div class="contact-trust-item">
+          <span class="check-icon"><svg viewBox="0 0 12 12" fill="none" width="11" height="11"><path d="M2 6l3 3 5-5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          No commitment required
+        
+</div>
+        <div class="contact-trust-item">
+          <span class="check-icon"><svg viewBox="0 0 12 12" fill="none" width="11" height="11"><path d="M2 6l3 3 5-5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          Live demo tailored to your agency
+        
+</div>
+        <div class="contact-trust-item">
+          <span class="check-icon"><svg viewBox="0 0 12 12" fill="none" width="11" height="11"><path d="M2 6l3 3 5-5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          Response within one business day
+        
+</div>
+        <div class="contact-trust-item">
+          <span class="check-icon"><svg viewBox="0 0 12 12" fill="none" width="11" height="11"><path d="M2 6l3 3 5-5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          Your information stays private
+        
+</div>
+      
+</div>
+    
+</div>
+
+    <!-- Right: form card -->
+    <div class="contact-form-card reveal reveal-delay-2">
+      <div class="form-title">Contact Us
+</div>
+      <div class="form-subtitle">Fill out the form and one of our government compliance specialists will be in touch within one business day.
+</div>
+
+      <!-- Error message -->
+      <div class="form-error-msg" id="formError">
+        Something went wrong. Please try again or email us directly.
+      
+</div>
+
+      <!-- The form — replace YOUR_FORMSPREE_ID with your actual ID -->
+      <form id="contactForm" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" novalidate>
+
+        <!-- Hidden field so Formspree knows where to send -->
+        <input type="hidden" name="_replyto" value="">
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="firstName">First Name <span class="req">*</span></label>
+            <input type="text" id="firstName" name="First Name" placeholder="Jane" required />
+          
+</div>
+          <div class="form-group">
+            <label for="lastName">Last Name <span class="req">*</span></label>
+            <input type="text" id="lastName" name="Last Name" placeholder="Smith" required />
+          
+</div>
+        
+</div>
+
+        <div class="form-group">
+          <label for="email">Work Email <span class="req">*</span></label>
+          <input type="email" id="email" name="Email" placeholder="jane.smith@agency.gov" required />
+        
+</div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="agency">Agency / Organization <span class="req">*</span></label>
+            <input type="text" id="agency" name="Agency" placeholder="Dept. of ..." required />
+          
+</div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="Phone" placeholder="(555) 000-0000" />
+          
+</div>
+        
+</div>
+
+        <div class="form-group">
+          <label for="interest">I'm interested in <span class="req">*</span></label>
+          <select id="interest" name="Interest" required>
+            <option value="" disabled selected>Select an option…</option>
+            <option value="Schedule a Demo">Scheduling a Demo</option>
+            <option value="Request Early Access">Requesting Early Access</option>
+            <option value="General Information">General Information</option>
+            <option value="Pricing">Pricing &amp; Procurement</option>
+          </select>
+        
+</div>
+
+        <div class="form-group">
+          <label for="message">Tell us about your program</label>
+          <textarea id="message" name="Message" placeholder="How many cardholders does your agency have? What compliance challenges are you facing?"></textarea>
+        
+</div>
+
+        <button type="submit" class="btn btn-gold btn-lg form-submit" id="submitBtn">
+          Send Message
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </form>
+
+      <!-- Success state (hidden until submission) -->
+      <div class="form-success" id="formSuccess">
+        <div class="form-success-icon">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M6 16l7 7 13-13" stroke="#2A8C7F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        
+</div>
+        <h3>Message Sent!</h3>
+        <p>Thank you for reaching out. Our team will review your request and get back to you within one business day.</p>
+      
+</div>
+    
+</div>
+
+  
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-left">
+    <span class="footer-copy">© 2026 Concordra. All rights reserved.</span>
+    <a href="#" class="footer-link">Privacy Policy</a>
+  
+</div>
+  <a href="#contact" class="footer-email">
+    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><rect x="1" y="3" width="12" height="8" rx="1.5" stroke="rgba(255,255,255,0.4)" stroke-width="1.3"/><path d="M1 5l6 4 6-4" stroke="rgba(255,255,255,0.4)" stroke-width="1.3"/></svg>
+    Contact Us
+  </a>
+</footer>
+
+<script>
+  // ── Scroll reveal ──────────────────────────────────────
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  // ── Mobile menu ────────────────────────────────────────
+  const hamburger  = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  hamburger.addEventListener('click', () => {
+    const isOpen = mobileMenu.classList.toggle('open');
+    hamburger.classList.toggle('open', isOpen);
+    hamburger.setAttribute('aria-expanded', isOpen);
+    mobileMenu.setAttribute('aria-hidden', !isOpen);
+  });
+
+  function closeMenu() {
+    mobileMenu.classList.remove('open');
+    hamburger.classList.remove('open');
+    hamburger.setAttribute('aria-expanded', false);
+    mobileMenu.setAttribute('aria-hidden', true);
+  }
+
+  // Close menu on outside click
+  document.addEventListener('click', (e) => {
+    if (!hamburger.contains(e.target) && !mobileMenu.contains(e.target)) {
+      closeMenu();
+    }
+  });
+
+  // Close menu on scroll
+  window.addEventListener('scroll', () => {
+    if (mobileMenu.classList.contains('open')) closeMenu();
+  }, { passive: true });
+
+  // ── Contact form (Formspree AJAX) ──────────────────────
+  const form      = document.getElementById('contactForm');
+  const submitBtn = document.getElementById('submitBtn');
+  const success   = document.getElementById('formSuccess');
+  const errorMsg  = document.getElementById('formError');
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    errorMsg.style.display = 'none';
+
+    // Basic client-side validation
+    const required = form.querySelectorAll('[required]');
+    let valid = true;
+    required.forEach(field => {
+      if (!field.value.trim()) { field.style.borderColor = '#EF4444'; valid = false; }
+      else { field.style.borderColor = ''; }
+    });
+    if (!valid) return;
+
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending…';
+
+    try {
+      const data = new FormData(form);
+      const res  = await fetch(form.action, {
+        method: 'POST',
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (res.ok) {
+        form.style.display = 'none';
+        success.style.display = 'block';
+      } else {
+        throw new Error('Server error');
+      }
+    } catch {
+      errorMsg.style.display = 'block';
+      submitBtn.disabled = false;
+      submitBtn.innerHTML = 'Send Message <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+    }
+  });
+
+  // Clear red border on re-type
+  form.querySelectorAll('input, select, textarea').forEach(field => {
+    field.addEventListener('input', () => field.style.borderColor = '');
+  });
+</script>
+</body>
+</html>
