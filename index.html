@@ -1211,7 +1211,8 @@
   /* ── RESPONSIVE ────────────────────────────────────── */
   @media (max-width: 900px) {
     .hero { grid-template-columns: 1fr; gap: 2rem; text-align: center; }
-    .hero-checks li { justify-content: center; }
+    .hero-checks { display: inline-flex; text-align: left; }
+    .hero-checks li { justify-content: flex-start; }
     .hero-ctas { justify-content: center; }
     .hero-visual { display: none; }
     .problem-grid, .about-grid, .contact-inner { grid-template-columns: 1fr; gap: 2rem; }
@@ -1701,7 +1702,7 @@
 </div>
 
       <!-- The form — replace YOUR_FORMSPREE_ID with your actual ID -->
-      <form id="contactForm" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" novalidate>
+      <form id="contactForm" action="https://formspree.io/f/xgopgvlr" method="POST" novalidate>
 
         <!-- Hidden field so Formspree knows where to send -->
         <input type="hidden" name="_replyto" value="">
